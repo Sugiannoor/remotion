@@ -12,6 +12,8 @@ import {
 } from "./transitions";
 import { CircularRevealVideo } from "./circular-reveal/CircularRevealVideo";
 import { ZustandInternalsVideo } from "./zustand/ZustandInternalsVideo";
+import { FormHandlingVideo } from "./form-handling/FormHandlingVideo";
+import { CardStackMechanicsVideo } from "./card-stack/CardStackMechanicsVideo";
 
 // All transitions: 30fps, 1 second duration, 1080x1920 (vertical/portrait for social media)
 const TRANSITION_CONFIG = {
@@ -94,6 +96,28 @@ export const RemotionRoot: React.FC = () => {
         id="ZustandInternals"
         component={ZustandInternalsVideo}
         durationInFrames={1770}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* === FORM HANDLING: onClick vs onSubmit vs action === */}
+
+      <Composition
+        id="FormHandling"
+        component={FormHandlingVideo}
+        durationInFrames={1860}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* === CARD STACK MECHANICS EXPLAINER VIDEO === */}
+
+      <Composition
+        id="CardStackMechanics"
+        component={CardStackMechanicsVideo}
+        durationInFrames={2400}
         fps={30}
         width={1080}
         height={1920}
