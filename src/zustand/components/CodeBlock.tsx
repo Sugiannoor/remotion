@@ -12,10 +12,6 @@ interface CodeBlockProps {
 
 // Very minimal token colorizer
 function tokenize(line: string): React.ReactNode {
-  // keywords
-  const keywords = /\b(const|let|var|return|new|if|function|=&gt;|=)\b/g;
-  // strings
-  const strings = /(".*?"|'.*?'|`.*?`)/g;
   // comments
   if (line.trim().startsWith("//")) {
     return <span style={{ color: COLORS.textMuted }}>{line}</span>;

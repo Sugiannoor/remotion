@@ -59,7 +59,6 @@ const TREE_EDGES: [string, string][] = [
   ["navbar", "themebtn"], ["main", "page"], ["footer", "footlink"],
 ];
 
-const nodeCenter = (n: NodeDef) => ({ x: COL[n.col], y: ROW[n.row] + NH / 2 });
 
 // ── Animated drawn line ──────────────────────────────────────────────────────
 const DrawnLine: React.FC<{
@@ -220,7 +219,6 @@ export const AnyComponentScene: React.FC = () => {
         {TREE_EDGES.map(([fromId, toId], i) => {
           const from = NODES.find(n => n.id === fromId)!;
           const to   = NODES.find(n => n.id === toId)!;
-          const len = Math.hypot(COL[to.col] - COL[from.col], ROW[to.row] - ROW[from.row] - NH);
           const exX = COL[from.col] + (COL[to.col] - COL[from.col]) * edgeOp;
           const exY = (ROW[from.row] + NH) + (ROW[to.row] - ROW[from.row] - NH) * edgeOp;
           return (

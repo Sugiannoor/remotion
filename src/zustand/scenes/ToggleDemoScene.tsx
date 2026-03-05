@@ -217,7 +217,6 @@ export const ToggleDemoScene: React.FC = () => {
     if (frame >= t.frame) isLight = !isLight;
   }
   const themeNow  = isLight ? LIGHT : DARK;
-  const themePrev = isLight ? DARK  : LIGHT;
 
   // Per trigger: compute reveal params for each panel
   const getPanelReveal = (panelIdx: number) => {
@@ -252,7 +251,6 @@ export const ToggleDemoScene: React.FC = () => {
   const PANEL_LABELS = ["Navbar", "Page", "Footer"];
 
   // Bottom caption + code
-  const captionOp = fi(60, 76);
   const codeOp    = fi(74, 88);
 
   const fadeOut = fi(225, 240);

@@ -11,6 +11,9 @@ importers:
       '@remotion/cli':
         specifier: 4.0.427
         version: 4.0.427(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@remotion/google-fonts':
+        specifier: ^4.0.432
+        version: 4.0.432(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@remotion/tailwind-v4':
         specifier: 4.0.427
         version: 4.0.427(@remotion/bundler@4.0.427(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(@rspack/core@1.7.6)(typescript@5.9.3)(webpack@5.105.0)
@@ -639,6 +642,9 @@ packages:
     resolution: {integrity: sha512-U2OYaOPti0Eyf+0vZuvBzDmI7t+vnnY3Bl8FHyiRH/2bShry/zg80R5XtN5b73vh4LezOcBv2nbl25hJKx+u2w==}
     peerDependencies:
       eslint: '>=9'
+
+  '@remotion/google-fonts@4.0.432':
+    resolution: {integrity: sha512-9wn5gbINnkCrOeoLEW8BgpLYRrsEZeL5iDyk0Be6TeLPhEuT/mqgofaPv9h9YZXnAes1suobRF8jVhUqwcb1wg==}
 
   '@remotion/licensing@4.0.427':
     resolution: {integrity: sha512-XMr+TODQXJV3xDCkj34wErA8bD2XB9992NUbrZLa7x5rOR/F7hHPhR1qIH6yhLTGoyataS7nYQvcSSPHBG7OQQ==}
@@ -1916,6 +1922,12 @@ packages:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
 
+  remotion@4.0.432:
+    resolution: {integrity: sha512-vM06zjMLoo5nANFJU1WSdelQisjpew2o006gnNCx93QTpfCrwC+3ZbDqOqidDML0VtOscr5MV5SUf9NZxv3sbw==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+
   require-from-string@2.0.2:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
     engines: {node: '>=0.10.0'}
@@ -2724,6 +2736,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
+
+  '@remotion/google-fonts@4.0.432(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+    dependencies:
+      remotion: 4.0.432(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+    transitivePeerDependencies:
+      - react
+      - react-dom
 
   '@remotion/licensing@4.0.427': {}
 
@@ -4122,6 +4141,11 @@ snapshots:
       tslib: 2.8.1
 
   remotion@4.0.427(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
+    dependencies:
+      react: 19.2.3
+      react-dom: 19.2.3(react@19.2.3)
+
+  remotion@4.0.432(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
     dependencies:
       react: 19.2.3
       react-dom: 19.2.3(react@19.2.3)
